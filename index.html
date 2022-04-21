@@ -3,19 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <title>Roman 600 aC</title>
-    <base href="/" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <link href="style.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@600&family=Cutive+Mono&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@600&family=Cutive+Mono&display=swap" rel="stylesheet"/>
+    <script src="script.js"></script>
+    <script src="calculate.js"></script>
+    <script src="convertalg.js"></script>
+    <script src="convertnum.js"></script>
   </head>
 
   <body>
     <div class="calculator">
       <div class="visor">
-        <span id="value" class="value-area">0</span>
+        <span id="value" class="value-area"> </span>
       </div>
       <div class="btns">
         <button class="btn operator" onclick="enterValue('+','op')">+</button>
@@ -29,10 +29,11 @@
         <button class="btn C" onclick="enterValue('C','num')">C</button>
         <button class="btn D" onclick="enterValue('D','num')">D</button>
         <button class="btn M" onclick="enterValue('M','num')">M</button>
-        <button class="btn operator igual" onclick="enterValue('=','op')">=</button>
+        <button class="btn operator igual" onclick="enterValue('⌫','cl')">⌫</button>
+        <button class="btn operator igual" onclick="enterValue('=','ope')">=</button>
       </div>
     </div>
   </body>
 
-  <script src="script.js"></script>
+
 </html>
